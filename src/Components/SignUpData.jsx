@@ -1,5 +1,5 @@
 import React from "react";
-import "./Signupstyle.css";
+import "./signupstyle.css";
 
 function SignUpData() {
     return (
