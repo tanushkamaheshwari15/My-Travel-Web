@@ -1,0 +1,99 @@
+.service {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+    padding: 0 20px;
+    max-width: 1200px;
+}
+
+.service h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.service p {
+    font-size: 1rem;
+    color: #555;
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+
+.s-card {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.s-image {
+    flex: 1 1 40%;
+}
+
+.s-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.serContent {
+    flex: 1 1 55%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+.serContent div {
+    flex: 1 1 45%;
+    background-color: #5f9ea0;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.serContent div:hover {
+    transform: translateY(-5px);
+    background-color: #538a8a;
+}
+
+.serContent i {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    display: block;
+    color: #fff;
+}
+
+.serContent h3 {
+    font-size: 1.2rem;
+    margin: 10px 0 5px;
+}
+
+.serContent p {
+    font-size: 0.95rem;
+    color: #f0f0f0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .s-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .s-image, .serContent {
+        width: 100%;
+        flex: unset;
+    }
+
+    .serContent div {
+        width: 100%;
+    }
+}
